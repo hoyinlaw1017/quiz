@@ -1,38 +1,92 @@
 .App {
-  text-align: center;
+    text-align: start;
+    display: block;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: rgba(40, 44, 52, 0.05);
+    min-height: 100vh;
+    display: block;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: start;
+    font-size: calc(10px + 2vmin);
+    color: #000000;
+    font-style: normal;
+    align-self: end;
+    align-content: start;
+    text-align: center;
+    position: static;
+    flex-wrap: nowrap;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.heading {
+    text-align: center;
+    display: block;
+    position: static;
+    align-self: stretch;
+    background-color: white;
+    overflow: visible;
+}
+
+.quizheadtext {
+    text-align: start;
+    align-self: start;
+    overflow: visible;
+    display: inline-block;
+}
+
+.body {
+    align-self: start;
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: row dense;
+    grid-template-rows: auto;
+    align-items: start;
+    justify-items: start;
+}
+
+.radiobutton {
+    display: block;
+    align-self: stretch;
+    overflow: visible;
+    grid-auto-flow: column;
+    font-style: normal;
+    width: 30px;
+}
+
+.queationtext {
+    font-style: italic;
+    font-weight: 600;
+    font-size: calc(10px + 4vmin);
+}
+
+.option {
+    display: grid;
+    grid-auto-flow: column;
 }
